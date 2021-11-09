@@ -19,8 +19,6 @@ import io.cucumber.junit.Cucumber;
 	    @Given("^user chooses the browser$")
 	    public void user_chooses_the_browser() throws InterruptedException, IOException  {
 	    	 driver=baseFile();
-	        // driver.manage().window().maximize();
-	    	 
 	    }
 
 	    @Then("^Hover on Shop Products tab$")
@@ -33,12 +31,13 @@ import io.cucumber.junit.Cucumber;
 	    @And("^navigated to url$")
 	    public void navigated_to_url() throws Throwable {
 	    	driver.get(prop.getProperty("url"));
-	    	//Thread.sleep(3000);
+	    	
 	    }
 
 	    @And("^validating the text \"([^\"]*)\"$")
 	    public void validating_the_text_something(String strArg1) throws Throwable {
-	        
+	        System.out.println("good hover");
+	        driver.close();
 	    }
 
 	}

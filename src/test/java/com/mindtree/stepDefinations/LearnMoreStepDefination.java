@@ -4,6 +4,7 @@ package com.mindtree.stepDefinations;
 import java.io.IOException;
 
 import org.junit.runner.RunWith;
+import org.openqa.selenium.JavascriptExecutor;
 
 import com.mindtree.pageObjects.LandingPage;
 import com.mindtree.pageObjects.LearnMorePage;
@@ -40,6 +41,8 @@ public class LearnMoreStepDefination extends WebDriverHelper{
     @And("^navigated to tideurl for third testcase$")
     public void navigated_to_tideurl_for_third_testcase() {
     	driver.get(prop.getProperty("url"));
+    	JavascriptExecutor js = (JavascriptExecutor) driver;
+    	js.executeScript("window.scrollBy(0,6000)", "");
     }
 
     @And("^close the browser for third test case$")

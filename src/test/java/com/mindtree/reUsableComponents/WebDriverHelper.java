@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class WebDriverHelper 
 {
 
-	public WebDriver driver;
+	public static WebDriver driver;
 	public Properties prop;
 	
 	public WebDriver baseFile() throws IOException
@@ -26,5 +26,9 @@ public class WebDriverHelper
 		}
 		return driver;
 		
+	}
+	public static WebDriver getDriver()
+	{
+		return driver;
 	}
 }
