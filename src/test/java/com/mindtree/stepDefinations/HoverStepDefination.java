@@ -36,7 +36,7 @@ import io.cucumber.junit.Cucumber;
 
 	    @And("^validating the text \"([^\"]*)\"$")
 	    public void validating_the_text_something(String strArg1) throws Throwable {
-	        System.out.println("good hover");
+	        System.out.println("hover passed");
 	        driver.close();
 	    }
 

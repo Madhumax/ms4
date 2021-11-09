@@ -35,7 +35,7 @@ public class LearnMoreStepDefination extends WebDriverHelper{
     public void validate_the_page_contains_something_word(String strArg1)  {
         LearnMorePage lmp=new LearnMorePage(driver);
         lmp.getParaText().isDisplayed();
-        System.out.println("good");
+        System.out.println("validated");
     }
 
     @And("^navigated to tideurl for third testcase$")

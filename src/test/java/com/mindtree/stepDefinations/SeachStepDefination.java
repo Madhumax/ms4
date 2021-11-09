@@ -34,7 +34,7 @@ import io.cucumber.junit.Cucumber;
 	    public void validate_the_page_contains_something_word(String strArg1) {
 	    	ProductsPage p=new ProductsPage(driver);
 	    	Assert.assertTrue(p.getText().isDisplayed());
-	    	System.out.println("good found the text");
+	    	System.out.println("validated the text");
 	    }
 
 	    @And("^navigated to tideurl$")
